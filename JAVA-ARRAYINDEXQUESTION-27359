@@ -1,0 +1,22 @@
+package arrayindexexceptionhanding;
+public class ArrayIndex {
+    
+}
+
+package arrayindexexceptionhanding;
+public class ArrayIndexExceptionHanding {
+    public static void main(String[] args)
+    {
+         int[] array={1,2,3,4,5};
+       int index=6; //out of bounds index
+       try{
+           int element=array[index];
+           System.out.println("Element at Index" +index+ ":" +element);
+       }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("error: invalid index"+index+"is out of bounds");
+        }
+    }
+    
+}
